@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
 
+chmod 644 videos/*
+chmod 644 images/*
+
 docker build -t clip-gallery .
 docker run --rm -p 8888:8888 clip-gallery

@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang='en'>
 <head>
-  <title>player.html</title>
+  <title>Changelog Clip Gallery</title>
   <meta charset='utf-8'>
-  <meta name='description' content='Drop player.html in a folder of videos and play them on the web' />
+  <meta name='description' content='Play clips from Changelog podcasts at conferences and other events' />
   <meta name='version' content='2.2.10'>
   <meta name='Copyright' content='©2022 Paul Ellis'>
   <meta name='license' content='https://opensource.org/licenses/MIT'>
   <meta name='viewport' content='width=device-width, initial-scale=1.0' />
-  <link rel='shortcut icon'
-    href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJAAAACQBAMAAAAVaP+LAAAAMFBMVEX////+8vn+4fP+zuz+tuL+n9r+l9f+gc7+bMb+XcD+Rbj+MK/+Hqj+D6P+BZ/+AJ2hzeniAAABZ0lEQVR42u3UO3HDQABF0QdhISgMdiYEBEEAMokgWBBEQRAiCBYE2xAsCJLzmdTWZ1/KtClu5dkL4JRXuVwul8vl/tmzoF5bMb3tNQR5LSHISwFBngME+UJBHijop4MgpwaCvFUQ5DVCkO8FBHkMEJTOEOTUQ5BTB0H+PkBQ+ioZyF4iBHkOEOQrBXmgIL9TkBsK2msISmsEoL+nEJCnAEE+U1A6QpDdUdDeQJC3EoK8RAjyLUCQRwpKJwiyewpKLQR5ryHIawlB/iggKE2BgewLBfkIQamFoF4MNIiBrmKgOTDQEoVAWykE2hsxUCcG6sVAZzHQFBjoXgiB1igE2iohUGrEQJ0YaBADXcVAc2CgJQqBtlIItB+EQKkVA/VioJMYaAwMdC+EQJ9RCLRVQqDUiIE6MdBRDHQRA02BgZZCCLSWQqC9FgKlVgzUi4FOYqBRDHQrGGiJQnqpxPSkXC6Xy+VyD9ovn971FIU9/uIAAAAASUVORK5CYII=' />
+  <link rel='shortcut icon' href='images/favicon.ico' />
   <style type='text/css' primary>
     *,
     *:before,
@@ -190,9 +189,10 @@
     .player {
       grid-area: player;
       width: 100%;
-      max-height: 75vh;
+      max-height: 85vh;
       margin: auto;
-      background-size: 56.25vw; /* 9/16 - icon will never be taller than a 16x9 video */
+      background-image: url("images/all-things-open-2023.jpg");
+      background-size: cover;
       background-repeat: no-repeat;
       background-position: center;
 
@@ -212,6 +212,7 @@
       max-height: 100%;
       background: black !important; /* `!important` must be used to override inline styles */
     }
+    .is-loaded .player { background-image: none; background-color: black; }
 
     .modal.show ~ .modal-background-overlay {
       display: block;

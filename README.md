@@ -1,8 +1,16 @@
 # Changelog Clip Gallery ✂️🎞️👀
 
-A fork of Paul Ellis' [player.html](https://github.com/pseudosavant/player.html) for use at conferences and other events where people might watch/listen to clips from our podcasts.
+A fork of Paul Ellis' [player.html](https://github.com/pseudosavant/player.html) for use at conferences and other events where people might watch/listen to clips from our podcasts. Notable changes:
 
-![screenshot](/screenshot.png)
+- Style tweaks
+  - Smaller play button
+  - No video title labels
+- Hide folders from file grid
+- Randomize video order
+- Add 'autoplay' feature
+- Remove unneeded buttons/settings
+
+![screenshot](/images/screenshot.png)
 
 ## How to use
 
